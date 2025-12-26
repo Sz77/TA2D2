@@ -1,0 +1,29 @@
+plugins {
+    id 'java-library'
+}
+
+group = 'org.tatoine'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+dependencies {
+    // No dependencies needed for this library
+}
+
+jar {
+    manifest {
+        attributes(
+            'Implementation-Title': 'TA2D2',
+            'Implementation-Version': project.version,
+            'Implementation-Vendor': 'TATOINE FTC #12201'
+        )
+    }
+}
